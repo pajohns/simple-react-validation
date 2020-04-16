@@ -1,0 +1,18 @@
+{
+  "name": "simple-react-validation",
+  "version": "1.0.1",
+  "description": "An easy to use validation tool using React hooks.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "prepublish": "tsc",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Philip Johns",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
