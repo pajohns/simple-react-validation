@@ -2,7 +2,7 @@
 An easy to use validator plugin for React allowing for easy usage.
 
 ### Usage example
-```react
+```jsx
 import { useValidation } from "simple-react-validation";
 export default function LoginPage() {
     const { validator, getFieldErrors, setErrors, isValid } = useValidation();
