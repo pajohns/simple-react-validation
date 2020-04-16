@@ -1,6 +1,6 @@
 {
   "name": "simple-react-validation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An easy to use validation tool using React hooks.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
