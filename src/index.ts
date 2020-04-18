@@ -1,1 +1,2 @@
-export * from './validation';
+export * from "./lib/validationHook";
+export * from "./lib/validator";

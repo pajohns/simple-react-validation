@@ -1,5 +1,5 @@
 # Simple React Validation
-An easy to use validator plugin for React allowing for easy usage.
+An easy to use validator plugin for React allowing for easy component validation.
 
 ### Usage example
 ```jsx
@@ -47,5 +47,7 @@ export default function LoginPage() {
 
     <input type="password" value={password}>
     <p>{getFieldErrors('password')}
+
+    <input type="button" disabled={!isValid} onClick={/* Perform action */}>
 }
 ```
