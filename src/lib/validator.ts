@@ -35,6 +35,14 @@ export class Validator {
         return this;
     }
 
+    passwordMatches(firstPassword: string, message?: string): Validator {
+        if (this.stringToTest !== firstPassword) {
+            this.validationMessages.push(message ? message : "Passwords do not match.");
+        }
+
+        return this;
+    }
+
     appendErrors(fieldName: string): Validator {
         if (this.validationMessages.length > 0) {
             this.errors = {

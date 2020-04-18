@@ -73,3 +73,22 @@ test("Field is below minimumlength.", () => {
     expect(result.current.isValid).toBe(false);
     expect(result.current.getFieldErrors(fieldName)).toBe(expectedMessage);
 });
+
+test("Passwords don't match.", () => {
+    const testString: string = "password1";
+    const passwordToCompare: string = "password2";
+    const fieldName: string = "password";
+    const expectedMessage: string = "Passwords are different.";
+    const { result } = renderHook(() => useValidation());
+
+    act(() => {
+        result.current.setErrors(result.current.validator
+            .for(testString)
+                .passwordMatches(passwordToCompare, expectedMessage)
+                .appendErrors(fieldName)
+            .finalResult());
+    });
+
+    expect(result.current.isValid).toBe(false);
+    expect(result.current.getFieldErrors(fieldName)).toBe(expectedMessage);
+})
