@@ -1,7 +1,7 @@
 {
   "name": "simple-react-validation",
   "author": "Philip Johns",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An easy to use validation tool using React hooks.",
   "main": "build/index.js",
   "module": "build/index.es.js",
